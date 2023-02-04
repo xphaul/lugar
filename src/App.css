@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.nav-link {
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.banner {
+  background-image: url("./images/banner-house.png");
+  background-repeat: no-repeat;
+  background-color: #afd4e2;
+  background-size: 40%;
+  background-position: right bottom;
+  padding-bottom: 150px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 108px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  padding: 18px, 24px, 18px, 24px;
+  border-radius: 0;
+  font-size: 14px;
+  height: 53px;
+  width: 127px;
+}
+
+.button:first-of-type {
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.section-property {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.property-list {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.property-image {
+  height: 415px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.property-image:nth-of-type(1) {
+  background-image: url("./images/first-house.jpg");
+}
+
+.property-image:nth-of-type(2) {
+  background-image: url("./images/first-house.jpg");
+}
+
+.property-image:nth-of-type(3) {
+  background-image: url("./images/first-house.jpg");
+}
+
+.property-details {
+  background: white;
+  padding: 25px;
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -10px;
+  margin: 0 auto;
+}
+
+.property-title {
+  font-size: 16px;
+  line-height: 16.8px;
+  font-weight: 700;
+}
+
+.property-address {
+  font-size: 14px;
+  line-height: 12px;
+  font-weight: 400;
 }
