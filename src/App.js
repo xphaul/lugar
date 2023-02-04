@@ -38,7 +38,6 @@ const App = () => {
     const getPropertyDetails = async () => {
       try {
         const res = await fetchProperties();
-        console.log({ res });
         setPropertyDetails(res.data.propertyCollection.items);
         setFilteredProperty(res.data.propertyCollection.items);
       } catch (error) {
@@ -62,8 +61,6 @@ const App = () => {
     filteredProp = propertyDetails.filter((props) => props.category === value);
     setFilteredProperty(filteredProp);
   };
-
-  console.log({ filteredProperty });
 
   return (
     <div className="App">
